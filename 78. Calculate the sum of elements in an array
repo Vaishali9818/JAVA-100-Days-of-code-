@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    System.out.println("enter size of array");
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int sum=0;
+    System.out.println("enter elements of array");
+    int ar[]=new int[n];
+    for(int i=0;i<n;i++)
+      {
+        ar[i]=sc.nextInt();
+      }
+    System.out.println("elements of array are:");
+    for(int i=0;i<n;i++)
+      {
+        System.out.println(ar[i]+" ");
+      }
+
+  System.out.println("Sum of elements of array is:");
+      for(int i=0;i<n;i++)
+        {
+          sum=sum+ar[i];
+        }
+    System.out.println(sum);
+  }
+}
