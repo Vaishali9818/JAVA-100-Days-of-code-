@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+class Main {
+  public static void main(String[] args) {
+    System.out.println("enter number of elemets");
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    System.out.println("Enter elements");
+    int ar[]=new int[n];
+    for(int i=0;i<n;i++)
+      {
+        ar[i]=sc.nextInt();
+      }
+  Arrays.sort(ar);
+    System.out.println("Sorted half in ascending and other half in descnding is:");
+    for(int i=0;i<n/2;i++)
+      {
+        System.out.println(ar[i]+" ");
+      }
+    for(int i=n-1;i>=n/2;i--)
+      {
+        System.out.println(ar[i]+" ");
+      }
+  }
+}
